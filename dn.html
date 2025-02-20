@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Aya Book</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('./img/br.jpg') no-repeat center center fixed;
+            background-size: cover;
+            flex-direction: column;
+            color: rgb(0, 170, 255);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .login-container {
+            background: rgba(3, 73, 110, 0.297);
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+            position: relative;
+        }
+        .login-container h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .input-box {
+            width: 100%;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid white;
+            background: transparent;
+            font-size: 16px;
+            color: white;
+            outline: none;
+        }
+        .input-box input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .input-box i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .options a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #72c6ef, #004e92);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background: linear-gradient(to right, #4a90e2, #003366);
+        }
+        .register {
+            margin-top: 10px;
+            color: white;
+        }
+        .register button {
+            background: gray;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: not-allowed;
+            color: white;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>CHÀO MỪNG BẠN ĐẾN VỚI AYA BOOK</h1>
+    <div class="login-container">
+        <span class="close">&times;</span>
+        <h2>Đăng nhập</h2>
+        <div class="input-box">
+            <input type="email" placeholder="Email">
+            <i>📧</i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Mật khẩu">
+            <i>🔒</i>
+        </div>
+        <div class="options">
+            <label><input type="checkbox"> Nhớ mật khẩu</label>
+            <a href="#">Quên mật khẩu</a>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+        <p class="register">Không nhớ tài khoản? <button>Đăng ký ngay</button></p>
+    </div>
+</body>
+</html>
