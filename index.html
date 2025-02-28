@@ -1,257 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Start Light</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="left">
-                <img src="./img/logo.png" alt="Logo" width="90px">
-                <nav>
-                    <div class="btn-group">
-                        <a href="#">Trang chủ</a>
-                    </div>
-                    <div class="btn-group">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown">Cửa hàng</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#">Về chúng tôi</a>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#">Liên hệ</a>
-                    </div>
-                </nav>
-            </div>
-        
-            <div class="right">
-                <div class="icons">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <button class="btn btn-primary">Liên Hệ</button>
-                <a href="#" class="btn btn-outline-dark">Đăng xuất</a>
-            </div>
-        </header>
-       
-        <div class="user-section">
-            <div class="user-info">
-                <img src="./img/avt.jpg" alt="Avatar" class="user-avatar">
-                <div class="user-details">
-                    <p class="user-name">Chào Bảo</p>
-                    <p class="user-email">baosiudz@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="search">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle topic-btn" type="button" data-bs-toggle="dropdown">
-                        Chủ đề
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    </ul>
-                </div>
-
-                <div class="search-wrapper">
-                    <input type="text" class="search-input" placeholder="Tìm kiếm sách">
-                    <i class="fas fa-search search-icon"></i>
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="header d-flex justify-content-between align-items-center py-3">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo" width="90px">
         </div>
-
-        <div class="banner">
-            <img src="./img/banner.jpg" alt="Banner">
+        <nav class="nav ms-4">
+            <div class="btn-group"><a href="#">Trang chủ</a></div>
+            <div class="btn-group"><a href="#">Giới thiệu</a></div>
+            <div class="btn-group">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown">Sản phẩm</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sách mới</a></li>
+                    <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
+                    <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="btn-group"><a href="#">Tin tức</a></div>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
         </div>
-        <main>
-            <div>
-                <h1 style="text-align: center;">SÁCH MỚI</h1>
-            </div>
-            <div class="new-book-section">
-                <div class="new-book">
-                    <div class="product-card">
-                        <img src="./img/book1.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="./img/book4.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="./img/book2.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="./img/book3.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="best-seller-section">
-                <h1 style="text-align: center;">SÁCH BÁN CHẠY</h1>
-                <div class="best-seller">
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book6.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        </div>
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book5.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">45,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book7.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">50,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book8.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">38,000đ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logan">
-                <img src="./img/logan.jpg" alt="">
-                <div class="logan-text">
-                    <h2>Manga Collection</h2>
-                    <br>
-                    <p>Bộ sưu tập dành cho fan mê truyện tranh</p>
-                </div>
-            </div>
-            <br>
-            <div class="best-seller-section">
-                <div class="best-seller">
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book6.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        </div>
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book5.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">45,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book7.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">50,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book8.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">38,000đ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logan">
-                <img src="./img/logan2.jpg" alt="">
-                <div class="logan-text">
-                    
-                </div>
-            </div>
-            <br>
-            <div class="best-seller-section">
-                <div class="best-seller">
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book6.png" alt="Nina ở thị trấn cao nguyên - Tập 2">
-                        </div>
-                        <p class="product-name">Nina ở thị trấn cao nguyên - Tập 2</p>
-                        <p class="product-price">34,200đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book5.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">45,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book7.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">50,000đ</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            <img src="./img/book8.png" alt="Tên sách khác">
-                        </div>
-                        <p class="product-name">Tên sách khác</p>
-                        <p class="product-price">38,000đ</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h3>DỊCH VỤ</h3>
-                    <ul>
-                        <li><a href="#">Điều khoản sử dụng</a></li>
-                        <li><a href="#">Chính sách bảo mật</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Hệ thống nhà sách</a></li>
-                        <li><a href="#">Tra cứu đơn hàng</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>HỖ TRỢ</h3>
-                    <ul>
-                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a href="#">Chính sách đổi trả - hoàn tiền</a></li>
-                        <li><a href="#">Chính sách vận chuyển</a></li>
-                        <li><a href="#">Phương thức thanh toán</a></li>
-                        <li><a href="#">Chính sách khách hàng</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column social-media">
-                    <h3>KẾT NỐI MẠNG XÃ HỘI</h3>
-                    <a href="#"><i class="fab fa-facebook" style="color: #057cd6;"></i></a>
-                    <a href="#"><i class="fab fa-youtube" style="color: red;"></i></i></a>
-                    <a href="#"><i class="fab fa-instagram" style="color: #f62109;"></i></a>
-                </div>
-            </div>
-        </footer>
-        
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./img/banner1.webp" alt="Banner" class="img-fluid">
     </div>
-</body>
 
+    <div class="container">
+        <!-- Sản phẩm nổi bật -->
+        <section class="text-center my-5">
+            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/15_e5412cea662645c4b6be4b6e187d6e3c_master.jpg" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/1_b73bf18895124d5f87dac83780383020_master.jpg" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/3_fa2d0dba87a342c4b00a9b72d6116f8b_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/4_c1da87814f9140ce8f6cd159ef0b51ae_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center my-5">
+            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="./img/banner2.webp" alt=""width="100%">
+        <section class="text-center my-5">
+            <h1 class="ribbon">SẢN PHẨM NỔI BẬT</h1>            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center my-5">
+            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center my-5">
+            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .voucher{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .vc1{
+                width: 30%;
+            }
+
+            .vc1 img{
+                width: 100%;
+            }
+        </style>
+        <img src="./img/banner3.webp" alt=""width="100%">
+        <section class="text-center my-5">
+            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+            <div class="product-wrapper">
+                <!-- Card sản phẩm (lặp lại cho 5 sản phẩm) -->
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
+                    <div class="product-info">
+                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
+                        <p class="product-price">36,000 VNĐ</p>
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="out-voucher">
+            <div class="text-center">
+                <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded" >ƯU ĐÃI THANH TOÁN</h1>
+    
+            </div>
+            <div class="voucher ">
+                <div class="vc1">
+                    <img src="./img/vcher1'.jpg" alt="">
+                </div>
+                <div class="vc1">
+                    <img src="./img/vcher8.jpg" alt="">
+                </div>
+                <div class="vc1">
+                    <img src="./img/vcher2.jpg" alt="">
+                </div>
+            </div>
+            <div class="email-contact">
+    <h2>LIÊN HỆ TỚI QUA EMAIL</h2>
+    <form>
+        <input type="email" placeholder="Enter your Email..." required>
+        <button type="submit">Gửi Email</button>
+    </form>
+</div>
+        </div>
+       
+    
+    </div>
+  
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-logo">
+                    <img src="./img/logo.png" alt="Starlight Logo" width="100px">
+                    <p>Kết nối cùng vô vàn mạng xã hội</p>
+                    <p>Watch, Thương hiệu nổi bật nhất hiện nay.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-support">
+                    <h3>DỊCH VỤ HỖ TRỢ</h3>
+                    <ul class="list-unstyled">
+                        <li>Hỗ trợ khách hàng</li>
+                        <li>Hỗ trợ mua hàng</li>
+                        <li>Hỗ trợ thanh toán</li>
+                        <li>Hỗ trợ chăm sóc khách hàng</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-services">
+                    <h3>DỊCH VỤ THÔNG TIN KHÁC</h3>
+                    <ul class="list-unstyled">
+                        <li>Ưu đãi tháng tận</li>
+                        <li>Quy chế bảo quyền</li>
+                        <li>Chính sách bảo hành</li>
+                        <li>Dịch vụ bảo hành</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-contact">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Ấp 3, Xuyên Thọ Thượng, Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i> +012345678910</li>
+                        <li><i class="fas fa-envelope"></i> cuongntps35144@ftu.edu.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-2">
+                <p>Nhóm 6: DATN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
