@@ -22,7 +22,7 @@
             <div class="btn-group"><a href="#">Trang chủ</a></div>
             <div class="btn-group"><a href="#">Giới thiệu</a></div>
             <div class="btn-group">
-                <a class="dropdown-toggle" data-bs-toggle="dropdown">Sản phẩm</a>
+                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Sách mới</a></li>
                     <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
@@ -32,30 +32,56 @@
             <div class="btn-group"><a href="#">Tin tức</a></div>
         </nav>
         <div class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-user"></i>
+            <div class="btn-group">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu p-3">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn">Đăng nhập</a>
+                        <a href="#" class="btn">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
     </header>
-
+    
     <div class="banner">
         <img src="./img/banner1.webp" alt="Banner" class="img-fluid">
     </div>
 
     <div class="container">
-        <section class="text-center my-5">
-            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
+        <section class="text-center my-5 card-section">
+            <h4 class="bg-warning text-white py-2 d-inline-block px-4 rounded">SẢN PHẨM MỚI</h4>
+            <div class="bars">
+                <div class="btn-group">
+                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sách mới</a></li>
+                        <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
+                        <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="product-wrapper">
                 <div class="product-card">
+                    <div class="heart-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
                     <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
                     <div class="product-info">
                         <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
+                        <p class="product-price"> Giá: 36,000 VNĐ</p>
                         <button class="cart-btn">
                             <i class="fas fa-shopping-cart"></i>
                         </button>
                     </div>
                 </div>
+                
+                
             
                 <div class="product-card">
                     <img src="./img/15_e5412cea662645c4b6be4b6e187d6e3c_master.jpg" alt="Rồng không trung - Tập 15" class="product-image">
@@ -102,320 +128,12 @@
                 </div>
             </div>
         </section>
-        <section class="text-center my-5">
-            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
-            <div class="product-wrapper">
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
         <img src="./img/banner2.webp" alt=""width="100%">
-        <section class="text-center my-5">
-            <h1 class="ribbon">SẢN PHẨM NỔI BẬT</h1>            <div class="product-wrapper">
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-center my-5">
-            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
-            <div class="product-wrapper">
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-center my-5">
-            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
-            <div class="product-wrapper">
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <style>
-            .voucher{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .vc1{
-                width: 30%;
-            }
-
-            .vc1 img{
-                width: 100%;
-            }
-        </style>
+    
         <img src="./img/banner3.webp" alt=""width="100%">
-        <section class="text-center my-5">
-            <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded">SẢN PHẨM NỔI BẬT</h1>
-            <div class="product-wrapper">
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img src="./img/13_db139c38be7f4cc280643a2440e6cdbb_master.webp" alt="Rồng không trung - Tập 15" class="product-image">
-                    <div class="product-info">
-                        <h5 class="product-title">Rồng không trung - Tập 15</h5>
-                        <p class="product-price">36,000 VNĐ</p>
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="out-voucher">
             <div class="text-center">
-                <h1 class="bg-warning text-black py-2 d-inline-block px-4 rounded" >ƯU ĐÃI THANH TOÁN</h1>
+                <h3 class="bg-warning text-black py-2 d-inline-block px-4 rounded" >ƯU ĐÃI THANH TOÁN</h3>
     
             </div>
             <div class="voucher ">
@@ -491,3 +209,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+<style>
+    .voucher{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .vc1{
+        width: 30%;
+    }
+
+    .vc1 img{
+        width: 100%;
+    }
+</style>
