@@ -1,0 +1,38 @@
+/////////////////////////// SẢN PHẨM /////////////////////
+###
+//Lấy tất cả sản phẩm
+GET http://localhost:5000/getAllProduct
+Content-Type: application/json
+
+###
+//Lấy 1 sản phẩm hoặc sản phẩm chi tiết theo id
+GET http://localhost:5000/getProduct/1
+Content-Type: application/json
+
+###
+// Top 10 sản phẩm mới nhất theo ngày xuất bản
+GET http://localhost:5000/newProduct
+Content-Type: application/json
+
+###
+//Tìm kiếm sản phẩm theo tên hoặc tác giả
+POST http://localhost:5000/searchProduct
+Content-Type: application/json
+
+{
+    "keyword": "Sách hay"
+}
+
+
+
+/////////////////////////// DANH MỤC ///////////////////////
+###
+//Lấy tất cả danh mục
+GET http://localhost:5000/getAllCategories
+Content-Type: application/json
+
+
+###
+//Lấy 1 danh mục theo id
+GET http://localhost:5000/getCategories/3
+Content-Type: application/json
