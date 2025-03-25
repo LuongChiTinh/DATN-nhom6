@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Light</title>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="js/index.js"></script>
-    <script src="./js/product.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
     <header class="header d-flex justify-content-between align-items-center py-3">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="logo">
             <img src="./img/logo.png" alt="Logo" width="90px">
         </div>
-        <nav class="nav ms-4">
+        <nav class="nav">
             <div class="btn-group"><a href="#">Trang chủ</a></div>
             <div class="btn-group"><a href="#">Giới thiệu</a></div>
             <div class="btn-group">
@@ -44,51 +42,47 @@
                 </div>
             </div>
         </div>
-        
-        
     </header>
 
-
+    <!-- Phần còn lại giữ nguyên -->
     <div class="container">
         <div class="container-product">
             <div class="show-cate">
-                <li><a href="">Tất cả</a></li>
-                <li><a href="#"> <div class="showdanhmc">
-                </div></a></li>
-               
+                <!-- Danh mục sẽ được thêm bằng JS -->
             </div>
-            <section class="text-center my-5 card-section">
-                <h4 class="bg-warning text-white py-2 d-inline-block px-4 rounded">Tất cả sản phẩm</h4>
-                <div class="bars">
-                    <div class="btn-group">
-                        <small>Sắp xếp theo</small>
-                        <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-bars"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Sách mới</a></li>
-                            <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
-                            <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
-                            <li><a href="#"><i class="fas fa-chevron-down"></i></a></li>
-                        </ul>
+            <section class="card-section">
+                <h4>Tất cả sản phẩm</h4>
+                <div class="search-filter">
+                    <div class="sort-options">
+                        <span class="sort-label">Sắp xếp:</span>
+                        <div class="sort-dropdown">
+                            <button class="sort-toggle">Chọn tiêu chí <i class="fas fa-chevron-down"></i></button>
+                            <ul class="sort-menu">
+                                <li class="sort-item" data-sort="new">Mới nhất</li>
+                                <li class="sort-item" data-sort="price-asc">Giá tăng dần</li>
+                                <li class="sort-item" data-sort="price-desc">Giá giảm dần</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-bar">
+                        <div class="input-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
+                        </div>
                     </div>
                 </div>
                 <div class="product-wrapper" id="productContainer">
                     <!-- Sản phẩm sẽ được hiển thị tại đây bằng JavaScript -->
                 </div>
-                
-                <!-- Pagination -->
                 <div class="pagination-container text-center mt-4">
                     <ul class="pagination justify-content-center" id="pagination">
                         <!-- Nút phân trang sẽ được thêm bằng JavaScript -->
                     </ul>
                 </div>
-                
             </section>
         </div>
-     
-
-    
     </div>
-  
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -137,7 +131,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 </html>
-
-
