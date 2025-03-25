@@ -1110,7 +1110,7 @@ body {
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 766px) {
         grid-template-columns: 1fr;
         .show-cate { margin-top: 0; margin-bottom: 20px; }
         .search-filter {
@@ -1134,6 +1134,7 @@ body {
         }
     }
 }
+
 
 
 

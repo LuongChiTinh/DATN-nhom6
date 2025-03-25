@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderProducts(filteredProducts);
     });
 
-    // Sự kiện sắp xếp
+    // Sự kiện sắp xep
     const sortToggle = document.querySelector(".sort-toggle");
     const sortMenu = document.querySelector(".sort-menu");
     const sortItems = document.querySelectorAll(".sort-item");
