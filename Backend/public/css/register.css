@@ -1,0 +1,120 @@
+/* Register Container */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px; /* Tăng nhẹ kích thước để chứa thêm trường */
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+/* Register Title */
+.register-container .register-title {
+    color: #25aceb;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #25aceb;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Form Group */
+.register-container .form-group {
+    margin-bottom: 20px;
+}
+
+/* Input Wrapper */
+.register-container .form-group .input-wrapper {
+    position: relative;
+}
+
+/* Input Styling */
+.register-container .form-group .input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus */
+.register-container .form-group .input-wrapper input:focus {
+    border-color: #25aceb;
+    box-shadow: 0 0 8px rgba(37, 172, 235, 0.3);
+    outline: none;
+}
+
+/* Icon trong Input */
+.register-container .form-group .input-wrapper i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+}
+
+/* Login Link */
+.register-container .login-link {
+    font-size: 13px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.register-container .login-link a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-container .login-link a:hover {
+    color: #25aceb;
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.register-container .btn {
+    background-color: #25aceb;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.register-container .btn:hover {
+    background-color: #0288d1;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .register-container {
+        padding: 20px;
+        margin: 50px auto;
+        max-width: 90%;
+    }
+
+    .register-container .register-title {
+        font-size: 24px;
+    }
+
+    .register-container .form-group .input-wrapper input {
+        padding: 10px 10px 10px 35px;
+        font-size: 13px;
+    }
+
+    .register-container .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .register-container .login-link {
+        font-size: 12px;
+    }
+}

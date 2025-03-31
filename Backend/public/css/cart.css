@@ -1,0 +1,285 @@
+/* Main Container */
+.main-container {
+    max-width: 80%; /* Đồng bộ với header/footer */
+    margin: 0 auto;
+    padding: 30px 0; /* Tăng từ 20px để thoáng hơn */
+}
+
+/* Section Title */
+.section-title.highlight-title {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+    padding: 12px 20px; /* Tăng nhẹ padding cho sang trọng */
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 26px; /* Đồng bộ với style.css */
+    font-weight: 600;
+    letter-spacing: 1.5px; /* Tăng để hiện đại hơn */
+    text-transform: uppercase;
+}
+
+/* Cart Table */
+.cart-table {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-table thead {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+}
+
+.cart-table thead th {
+    font-weight: 600;
+    text-align: center;
+    padding: 12px; /* Giảm từ 15px để nhỏ gọn */
+    font-size: 14px; /* Nhỏ hơn để tinh tế */
+    letter-spacing: 0.75px; /* Tăng để hiện đại */
+}
+
+.cart-table tbody {
+    color: #333;
+}
+
+.cart-table tbody tr {
+    transition: background 0.3s ease; /* Đồng bộ hiệu ứng */
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+}
+
+.cart-table tbody td {
+    vertical-align: middle;
+    padding: 12px; /* Giảm từ 15px để gọn hơn */
+    text-align: center;
+    font-size: 14px; /* Nhỏ hơn để tinh tế */
+}
+
+.cart-table tbody td img {
+    width: 70px; /* Giảm từ 80px để gọn hơn */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Thêm bóng nhẹ */
+}
+
+/* Quantity Controls */
+.cart-table .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Giảm từ 10px để gọn hơn */
+}
+
+.cart-table .quantity-controls button {
+    background: #25aceb;
+    border: none;
+    color: white;
+    width: 28px; /* Giảm từ 30px */
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px; /* Giảm từ 16px */
+    transition: background 0.3s ease, transform 0.2s ease; /* Thêm transform */
+}
+
+.cart-table .quantity-controls button:hover {
+    background: #0288d1;
+    transform: scale(1.1); /* Hiệu ứng phóng to nhẹ */
+}
+
+.cart-table .quantity-controls input {
+    width: 45px; /* Giảm từ 50px */
+    text-align: center;
+    border: 1px solid #25aceb;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px; /* Đồng bộ với td */
+    transition: border-color 0.3s ease;
+}
+
+.cart-table .quantity-controls input:focus {
+    border-color: #0288d1;
+    outline: none;
+}
+
+/* Action Buttons */
+.cart-table .remove-btn, .cart-table .view-btn {
+    background: transparent;
+    border: none;
+    font-size: 18px; /* Giảm từ 20px */
+    transition: color 0.3s ease, transform 0.2s ease; /* Thêm transform */
+}
+
+.cart-table .remove-btn {
+    color: #ff4444;
+}
+
+.cart-table .remove-btn:hover {
+    color: #cc0000;
+    transform: scale(1.2); /* Hiệu ứng phóng to nhẹ */
+}
+
+.cart-table .view-btn {
+    color: #25aceb;
+}
+
+.cart-table .view-btn:hover {
+    color: #0288d1;
+    transform: scale(1.2); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Checkout Summary */
+.checkout-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+    position: sticky;
+    top: 120px; /* Điều chỉnh để không che header khi cuộn */
+    transition: box-shadow 0.3s ease;
+}
+
+.checkout-summary:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Hiệu ứng nổi bật hơn */
+}
+
+.checkout-summary h5 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px; /* Nhỏ hơn để tinh tế */
+    letter-spacing: 0.5px; /* Tăng để hiện đại */
+}
+
+.checkout-summary p {
+    font-size: 16px; /* Giảm từ 18px */
+    color: #25aceb;
+    margin-bottom: 15px; /* Giảm từ 20px */
+    font-weight: 500;
+}
+
+.checkout-summary .voucher-section {
+    margin-bottom: 15px; /* Giảm từ 20px */
+}
+
+.checkout-summary .voucher-section label {
+    color: #333;
+    font-weight: 500;
+    font-size: 14px; /* Nhỏ hơn để gọn */
+}
+
+.checkout-summary .voucher-section .input-group input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #25aceb;
+    padding: 8px; /* Giảm từ 10px */
+    font-size: 14px; /* Nhỏ hơn để gọn */
+    transition: border-color 0.3s ease;
+}
+
+.checkout-summary .voucher-section .input-group input:focus {
+    border-color: #0288d1;
+    outline: none;
+}
+
+.checkout-summary .voucher-section .input-group button {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #25aceb;
+    background: #25aceb;
+    color: white;
+    padding: 8px 12px; /* Giảm từ mặc định */
+    font-size: 14px; /* Nhỏ hơn để gọn */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-summary .voucher-section .input-group button:hover {
+    background: #0288d1;
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+.checkout-summary hr {
+    border-color: #ddd;
+    margin: 15px 0; /* Giảm từ 20px */
+}
+
+.checkout-summary .final-total {
+    font-size: 18px; /* Giảm từ 20px */
+    font-weight: 700; /* Tăng để nổi bật */
+    color: #0288d1;
+}
+
+.checkout-summary .btn {
+    background: #25aceb;
+    border: none;
+    padding: 10px; /* Giảm từ 12px */
+    border-radius: 25px; /* Đồng bộ với style.css */
+    font-weight: 600;
+    font-size: 16px; /* Nhỏ hơn để tinh tế */
+    transition: background 0.3s ease, transform 0.3s ease; /* Đồng bộ với style.css */
+}
+
+.checkout-summary .btn:hover {
+    background: #0288d1;
+    transform: scale(1.05); /* Đồng bộ với style.css */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .checkout-summary {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .cart-table tbody td {
+        font-size: 12px; /* Giảm trên tablet */
+    }
+
+    .cart-table tbody td img {
+        width: 60px; /* Giảm trên tablet */
+    }
+
+    .cart-table .quantity-controls button {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .cart-table .quantity-controls input {
+        width: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        padding: 20px 0; /* Giảm trên mobile */
+        max-width: 95%; /* Tăng để tận dụng không gian */
+    }
+
+    .section-title.highlight-title {
+        font-size: 22px; /* Giảm trên mobile */
+        padding: 10px 15px;
+    }
+
+    .cart-table tbody td {
+        padding: 8px; /* Giảm trên mobile */
+        font-size: 11px;
+    }
+
+    .cart-table tbody td img {
+        width: 50px; /* Giảm trên mobile */
+    }
+
+    .checkout-summary {
+        padding: 15px; /* Giảm trên mobile */
+    }
+
+    .checkout-summary p {
+        font-size: 14px;
+    }
+
+    .checkout-summary .final-total {
+        font-size: 16px;
+    }
+}

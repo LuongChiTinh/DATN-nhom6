@@ -1,0 +1,202 @@
+/* Order Info Section */
+.order-info-section {
+    padding: 30px 0; /* Đồng bộ với các trang khác */
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+    max-width: 80%; /* Đồng bộ với header/footer */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.order-info-section .section-title {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+    padding: 12px 20px; /* Tinh tế hơn */
+    border-radius: 10px 10px 0 0; /* Đồng bộ với cart.css */
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 26px; /* Đồng bộ với style.css */
+    font-weight: 600;
+    letter-spacing: 1.5px; /* Hiện đại hơn */
+    text-transform: uppercase;
+}
+
+/* Order Details */
+.order-info-section .order-details {
+    background-color: #ffffff; /* Đổi từ #f0f7fa sang trắng để nổi bật */
+    padding: 20px; /* Tăng từ 15px để thoáng hơn */
+    border-radius: 10px; /* Đồng bộ với style.css */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+    transition: box-shadow 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+.order-info-section .order-details:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Nổi bật khi hover */
+}
+
+.order-info-section .order-details #orderDetails {
+    color: #333;
+    margin-bottom: 20px; /* Tăng từ 15px để thoáng hơn */
+    font-size: 16px; /* Đồng bộ với các trang khác */
+}
+
+.order-info-section .order-details #orderDetails p {
+    margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+}
+
+.order-info-section .order-details #orderDetails strong {
+    font-weight: 600;
+    color: #25aceb; /* Đổi sang màu chủ đạo để nổi bật */
+}
+
+.order-info-section .order-details #orderDetails .order-status {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.order-info-section .order-details #orderDetails .order-status.pending {
+    background-color: #ffe082;
+    color: #333;
+}
+
+.order-info-section .order-details #orderDetails .order-status.completed {
+    background-color: #81c784;
+    color: white;
+}
+
+.order-info-section .order-details #orderDetails .order-status.cancelled {
+    background-color: #ef5350;
+    color: white;
+}
+
+.order-info-section .order-details #orderDetails .btn {
+    background: #25aceb;
+    border: none;
+    padding: 8px 15px; /* Nhỏ gọn hơn */
+    border-radius: 25px; /* Đồng bộ với style.css */
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease; /* Đồng bộ với style.css */
+}
+
+.order-info-section .order-details #orderDetails .btn:hover {
+    background: #0288d1;
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Order Table */
+.order-info-section .order-details .table {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Tăng từ 2px để đồng bộ */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.order-info-section .order-details .table thead {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+}
+
+.order-info-section .order-details .table thead th {
+    font-weight: 600;
+    text-align: center;
+    padding: 12px; /* Nhỏ gọn hơn */
+    font-size: 14px; /* Đồng bộ với cart.css */
+    letter-spacing: 0.75px; /* Hiện đại hơn */
+}
+
+.order-info-section .order-details .table tbody tr {
+    transition: background 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+.order-info-section .order-details .table tbody tr:hover {
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+}
+
+.order-info-section .order-details .table tbody td {
+    vertical-align: middle;
+    padding: 12px; /* Nhỏ gọn hơn */
+    text-align: center;
+    font-size: 14px; /* Đồng bộ với cart.css */
+    color: #333;
+}
+
+.order-info-section .order-details .table tbody td img {
+    width: 60px; /* Tăng từ 50px để rõ hơn */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Thêm bóng nhẹ */
+}
+
+/* Order Summary */
+.order-info-section .order-details .order-summary {
+    margin-top: 15px;
+}
+
+.order-info-section .order-details .order-summary .order-total {
+    color: #333;
+    font-weight: 600;
+    font-size: 18px; /* Nhỏ hơn để tinh tế */
+    padding: 10px 0;
+}
+
+.order-info-section .order-details .order-summary .order-total strong:last-child {
+    color: #0288d1; /* Đổi sang màu đậm hơn để nổi bật */
+    font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .order-info-section {
+        padding: 20px 0; /* Giảm trên tablet */
+        max-width: 90%; /* Tăng nhẹ để tận dụng không gian */
+    }
+
+    .order-info-section .section-title {
+        font-size: 22px; /* Giảm trên tablet */
+        padding: 10px 15px;
+    }
+
+    .order-info-section .order-details {
+        padding: 15px; /* Giảm trên tablet */
+    }
+
+    .order-info-section .order-details .table thead th,
+    .order-info-section .order-details .table tbody td {
+        font-size: 12px; /* Giảm trên tablet */
+        padding: 10px;
+    }
+
+    .order-info-section .order-details .table tbody td img {
+        width: 50px; /* Giảm trên tablet */
+    }
+
+    .order-info-section .order-details .order-summary .order-total {
+        font-size: 16px; /* Giảm trên tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    .order-info-section {
+        max-width: 95%; /* Tăng trên mobile */
+    }
+
+    .order-info-section .order-details #orderDetails {
+        font-size: 14px; /* Giảm trên mobile */
+    }
+
+    .order-info-section .order-details .table thead th,
+    .order-info-section .order-details .table tbody td {
+        font-size: 11px; /* Giảm trên mobile */
+        padding: 8px;
+    }
+
+    .order-info-section .order-details .table tbody td img {
+        width: 40px; /* Giảm trên mobile */
+    }
+
+    .order-info-section .order-details .order-summary .order-total {
+        font-size: 14px; /* Giảm trên mobile */
+    }
+}

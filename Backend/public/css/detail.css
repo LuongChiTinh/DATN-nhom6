@@ -1,0 +1,341 @@
+/* Product Detail Section */
+.product-detail {
+    padding: 30px 0;
+    background-color: #f0f7fa;
+    max-width: 80%; /* Đồng bộ với footer trong style.css */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.product-detail h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #25aceb;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.product-detail .text-danger {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d32f2f;
+}
+
+.product-detail .text-muted {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-detail small {
+    color: #25aceb;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-detail .img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Quantity Selector */
+.product-detail .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product-detail .quantity-selector .form-control {
+    border: 1px solid #25aceb;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-detail .quantity-selector .form-control:focus {
+    border-color: #0288d1;
+    box-shadow: 0 0 5px rgba(37, 172, 235, 0.5);
+    outline: none;
+}
+
+.product-detail .quantity-selector .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #25aceb;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.product-detail .quantity-selector .btn:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.product-detail .btn-primary {
+    background-color: #25aceb;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.product-detail .btn-primary:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+.product-detail .btn-outline-danger {
+    border-color: #d32f2f;
+    color: #d32f2f;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.product-detail .btn-outline-danger:hover {
+    background-color: #d32f2f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Comments Section */
+.comments-section {
+    padding: 30px 0;
+    max-width: 80%; /* Đồng bộ với footer trong style.css */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.comments-section h3,
+.related-products h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #25aceb;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Comment Form */
+.comments-section .comment-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comments-section .comment-form textarea {
+    border: 1px solid #25aceb;
+    border-radius: 10px;
+    resize: none;
+    padding: 12px;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.comments-section .comment-form textarea:focus {
+    border-color: #0288d1;
+    box-shadow: 0 0 5px rgba(37, 172, 235, 0.5);
+    outline: none;
+}
+
+.comments-section .comment-form .form-select {
+    border: 1px solid #25aceb;
+    border-radius: 10px;
+    padding: 8px;
+    width: 120px;
+    font-size: 16px;
+}
+
+.comments-section .comment-form .btn {
+    padding: 10px 20px;
+    background-color: #25aceb;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.comments-section .comment-form .btn:hover {
+    background-color: #0288d1;
+}
+
+/* Comments List */
+.comments-section .comments-list .card {
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.comments-section .comments-list .card-body {
+    padding: 0;
+}
+
+.comments-section .comments-list .card-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comments-section .comments-list .text-muted {
+    font-size: 14px;
+}
+
+/* Related Products Section */
+.related-products {
+    padding: 30px 0;
+    background-color: #f0f7fa;
+    max-width: 80%; /* Đồng bộ với footer trong style.css */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.related-products .card {
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.related-products .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.related-products .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.related-products .card-body {
+    padding: 15px;
+}
+
+.related-products .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #25aceb;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.related-products .card-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #d32f2f;
+}
+
+.related-products .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #25aceb;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.related-products .btn:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-detail {
+        padding: 20px 0;
+        max-width: 90%; /* Tăng nhẹ trên tablet để dễ đọc */
+    }
+
+    .product-detail h2 {
+        font-size: 22px;
+    }
+
+    .product-detail .text-danger {
+        font-size: 1.25rem;
+    }
+
+    .product-detail .quantity-selector .form-control {
+        width: 60px;
+    }
+
+    .comments-section,
+    .related-products {
+        max-width: 90%; /* Tăng nhẹ trên tablet */
+    }
+
+    .comments-section h3,
+    .related-products h3 {
+        font-size: 22px;
+    }
+
+    .comments-section .comment-form .form-select {
+        width: 100px;
+    }
+
+    .related-products .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-detail {
+        padding: 20px 0;
+        max-width: 95%; /* Tăng trên mobile để tận dụng không gian */
+    }
+
+    .product-detail .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .product-detail .col-md-5,
+    .product-detail .col-md-7 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .product-detail .img-fluid {
+        max-height: 300px;
+    }
+
+    .comments-section,
+    .related-products {
+        max-width: 95%; /* Tăng trên mobile */
+    }
+
+    .comments-section .comment-form {
+        padding: 15px;
+    }
+
+    .comments-section .comment-form .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .comments-section .comment-form .form-select {
+        width: 100%;
+    }
+}

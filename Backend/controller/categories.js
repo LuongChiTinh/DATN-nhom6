@@ -1,33 +1,32 @@
 const express = require('express');
 const db = require('../models/db');
-const app = express.Router();
+const router = express.Router();
 
-// Lấy tất cả danh mục
-app.get('/getAllCategories', (req, res) => {
+router.get('/getAllCategories', async (req, res) => {
     const sql = 'SELECT * FROM category';
-    db.getItem(sql, function (err, resultQuery) {
-        if (err) {
-            console.error('Lỗi truy vấn MySQL:', err);
-            return res.status(500).json({ error: 'Lỗi server' });
-        } else {
-            res.json(resultQuery)
-        }
-    });
+    try {
+        db.getItem(sql, [], (err, result) => {
+            if (err) return res.status(500).json({ error: 'Database error' });
+            res.json(result || []);
+        });
+    } catch (err) {
+        res.status(500).json({ error: 'Error fetching categories' });
+    }
 });
 
-// Lấy 1 danh mục theo id
-app.get('/getCategories/:id', (req, res) => {
-    const id = req.params.id
-    const sql = `SELECT * FROM category WHERE Category_ID = ${id}`;
-    db.getItem(sql, function (err, resultQuery) {
-        if (err) {
-            console.error('Lỗi truy vấn MySQL:', err);
-            return res.status(500).json({ error: 'Lỗi server' });
-        } else {
-            res.json(resultQuery)
-        }
-    })
-})
+router.get('/getCategories/:id', async (req, res) => {
+    const id = parseInt(req.params.id);
+    if (isNaN(id)) return res.status(400).json({ error: 'Invalid category ID' });
 
+    const sql = `SELECT * FROM category WHERE Category_ID = ?`;
+    try {
+        db.getItem(sql, [id], (err, result) => {
+            if (err) return res.status(500).json({ error: 'Database error' });
+            res.json(result[0] || {});
+        });
+    } catch (err) {
+        res.status(500).json({ error: 'Error fetching category' });
+    }
+});
 
-module.exports = app;
+module.exports = router;

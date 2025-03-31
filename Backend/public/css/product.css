@@ -1,0 +1,220 @@
+.main-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section-title {
+    background: linear-gradient(90deg, #25aceb, #0288d1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.list-group-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list-group-item:hover,
+.list-group-item.active {
+    background-color: #25aceb;
+    color: white;
+}
+
+
+
+
+.sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-wrapper label {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.sort-wrapper .form-select {
+    border-radius: 20px;
+    border: 1px solid #25aceb;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+.sort-wrapper .form-select:focus {
+    border-color: #0288d1;
+    box-shadow: 0 0 5px rgba(37, 172, 235, 0.5);
+}
+
+
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-wrapper.suggested-products {
+    justify-content: center;
+}
+
+.product-card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 0 0 calc(25% - 20px); /* 4 sản phẩm mỗi hàng cho productContainer */
+    margin: 10px 0;
+    padding: 15px;
+    height: 400px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-wrapper.suggested-products .product-card {
+    flex: 0 0 calc(20% - 20px); /* 5 sản phẩm mỗi hàng cho suggestedProducts */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(37, 172, 235, 0.3);
+}
+
+.product-card .product-image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card .heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .heart-icon i {
+    font-size: 20px;
+    color: #25aceb;
+    transition: transform 0.3s;
+}
+
+.product-card .heart-icon.active i {
+    color: #ff4444;
+    transform: scale(1.2);
+}
+
+.product-card .heart-icon:hover i {
+    transform: scale(1.2);
+}
+
+.product-card .product-info {
+    padding: 10px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card .product-info .product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #25aceb;
+    margin-bottom: 5px;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-card .product-info .product-author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-card .product-info .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card .product-info .product-footer .product-price {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    margin: 0;
+}
+
+.product-card .product-info .product-footer .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card .product-info .product-footer .action-buttons .view-btn,
+.product-card .product-info .product-footer .action-buttons .cart-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #25aceb;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.product-card .product-info .product-footer .action-buttons .view-btn:hover,
+.product-card .product-info .product-footer .action-buttons .cart-btn:hover {
+    color: #0288d1;
+}
+
+@media (max-width: 1200px) {
+    .product-card {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+    .product-wrapper.suggested-products .product-card {
+        flex: 0 0 calc(25% - 20px); /* 4 sản phẩm mỗi hàng */
+    }
+}
+
+@media (max-width: 991px) {
+    .product-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+    .product-wrapper.suggested-products .product-card {
+        flex: 0 0 calc(33.33% - 20px); /* 3 sản phẩm mỗi hàng */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        flex: 0 0 calc(100% - 20px);
+    }
+    .product-wrapper.suggested-products .product-card {
+        flex: 0 0 calc(50% - 20px); /* 2 sản phẩm mỗi hàng */
+    }
+}

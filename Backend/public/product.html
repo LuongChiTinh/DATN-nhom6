@@ -3,133 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Light</title>
+    <title>Sản Phẩm - Start Light</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+    
 </head>
 <body>
-    <header class="header d-flex justify-content-between align-items-center py-3">
-     
-        <div class="logo">
-            <img src="./img/logo.png" alt="Logo" width="90px">
-        </div>
-        <nav class="nav">
-            <div class="btn-group"><a href="#">Trang chủ</a></div>
-            <div class="btn-group"><a href="#">Giới thiệu</a></div>
-            <div class="btn-group">
-                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Sách mới</a></li>
-                    <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
-                    <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
+  
+    <div id="header-placeholder"></div>
+
+    <div class="main-container my-5">
+        <h3 class="section-title highlight-title" id="productTitle">Tất cả sản phẩm</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <h5>Danh mục</h5>
+                <ul class="list-group" id="categoryList">
+                    <li class="list-group-item active" onclick="fetchAllProducts()">Tất cả</li>
                 </ul>
             </div>
-            <div class="btn-group"><a href="#">Tin tức</a></div>
-        </nav>
-        <div class="icons">
-            <div class="btn-group">
-                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-user"></i>
-                </a>
-                <div class="dropdown-menu p-3">
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn">Đăng nhập</a>
-                        <a href="#" class="btn">Đăng ký</a>
+            <div class="col-md-9">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <div class="sort-wrapper">
+                        <label>Sắp xếp theo: </label>
+                        <select id="sortSelect" class="form-select d-inline w-auto">
+                            <option value="all">Tất cả</option>
+                            <option value="new">Mới nhất</option>
+                            <option value="price-asc">Giá tăng dần</option>
+                            <option value="price-desc">Giá giảm dần</option>
+                            <option value="views">Lượt xem nhiều</option>
+                            <option value="purchases">Lượt mua nhiều</option>
+                        </select>
+                    </div>
+                    <div class="search-wrapper">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm tác giả...">
                     </div>
                 </div>
+                <div class="product-wrapper" id="productContainer"></div>
+                <div id="pagination" class="mt-3 d-flex justify-content-center gap-2"></div>
             </div>
         </div>
-    </header>
 
-    <!-- Phần còn lại giữ nguyên -->
-    <div class="container">
-        <div class="container-product">
-            <div class="show-cate">
-                <!-- Danh mục sẽ được thêm bằng JS -->
-            </div>
-            <section class="card-section">
-                <h4>Tất cả sản phẩm</h4>
-                <div class="search-filter">
-                    <div class="sort-options">
-                        <span class="sort-label">Sắp xếp:</span>
-                        <div class="sort-dropdown">
-                            <button class="sort-toggle">Chọn tiêu chí <i class="fas fa-chevron-down"></i></button>
-                            <ul class="sort-menu">
-                                <li class="sort-item" data-sort="new">Mới nhất</li>
-                                <li class="sort-item" data-sort="price-asc">Giá tăng dần</li>
-                                <li class="sort-item" data-sort="price-desc">Giá giảm dần</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="search-bar">
-                        <div class="input-wrapper">
-                            <i class="fas fa-search"></i>
-                            <input type="text" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-wrapper" id="productContainer">
-                    <!-- Sản phẩm sẽ được hiển thị tại đây bằng JavaScript -->
-                </div>
-                <div class="pagination-container text-center mt-4">
-                    <ul class="pagination justify-content-center" id="pagination">
-                        <!-- Nút phân trang sẽ được thêm bằng JavaScript -->
-                    </ul>
-                </div>
-            </section>
-        </div>
+        <h3 class="section-title mt-5">Sản phẩm gợi ý cho bạn</h3>
+        <div class="product-wrapper suggested-products" id="suggestedProducts"></div>
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 footer-logo">
-                    <img src="./img/logo.png" alt="Starlight Logo" width="100px">
-                    <p>Kết nối cùng vô vàn mạng xã hội</p>
-                    <p>Watch, Thương hiệu nổi bật nhất hiện nay.</p>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3 footer-support">
-                    <h3>DỊCH VỤ HỖ TRỢ</h3>
-                    <ul class="list-unstyled">
-                        <li>Hỗ trợ khách hàng</li>
-                        <li>Hỗ trợ mua hàng</li>
-                        <li>Hỗ trợ thanh toán</li>
-                        <li>Hỗ trợ chăm sóc khách hàng</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-services">
-                    <h3>DỊCH VỤ THÔNG TIN KHÁC</h3>
-                    <ul class="list-unstyled">
-                        <li>Ưu đãi tháng tận</li>
-                        <li>Quy chế bảo quyền</li>
-                        <li>Chính sách bảo hành</li>
-                        <li>Dịch vụ bảo hành</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-contact">
-                    <h3>THÔNG TIN LIÊN HỆ</h3>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> Ấp 3, Xuyên Thọ Thượng, Hồ Chí Minh, Việt Nam</li>
-                        <li><i class="fas fa-phone"></i> +012345678910</li>
-                        <li><i class="fas fa-envelope"></i> cuongntps35144@ftu.edu.vn</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom text-center py-2">
-                <p>Nhóm 6: DATN</p>
-            </div>
-        </div>
+        <!-- Giữ nguyên footer -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
     <script src="./js/product.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

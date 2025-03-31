@@ -1,0 +1,118 @@
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Điều chỉnh kích thước phù hợp hơn */
+    width: 100%;
+    text-align: center;
+    margin: 100px auto; /* Giữ khoảng cách từ header */
+}
+
+/* Login Title */
+.login-container .login-title {
+    color: #25aceb; /* Màu chủ đạo của Start Light */
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #25aceb;
+    padding-bottom: 10px;
+    text-transform: uppercase; /* Tăng tính chuyên nghiệp */
+}
+
+/* Form Group */
+.login-container .form-group {
+    margin-bottom: 20px; /* Khoảng cách giữa các trường lớn hơn một chút */
+}
+
+/* Input Wrapper */
+.login-container .form-group .input-wrapper {
+    position: relative;
+}
+
+/* Input Styling */
+.login-container .form-group .input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Tăng padding cho dễ nhìn */
+    border: 1px solid #ddd; /* Màu viền nhẹ nhàng hơn */
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+/* Input Focus */
+.login-container .form-group .input-wrapper input:focus {
+    border-color: #25aceb;
+    box-shadow: 0 0 8px rgba(37, 172, 235, 0.3);
+    outline: none; /* Loại bỏ viền mặc định của trình duyệt */
+}
+
+/* Icon trong Input */
+.login-container .form-group .input-wrapper i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999; /* Màu xám nhạt cho icon */
+    font-size: 16px;
+}
+
+/* Forgot Password Links */
+.login-container .forgot-password {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-container .forgot-password a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-container .forgot-password a:hover {
+    color: #25aceb;
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.login-container .btn {
+    background-color: #25aceb;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .btn:hover {
+    background-color: #0288d1; /* Màu đậm hơn khi hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px;
+        margin: 50px auto; /* Giảm khoảng cách trên mobile */
+        max-width: 90%;
+    }
+
+    .login-container .login-title {
+        font-size: 24px;
+    }
+
+    .login-container .form-group .input-wrapper input {
+        padding: 10px 10px 10px 35px;
+        font-size: 13px;
+    }
+
+    .login-container .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

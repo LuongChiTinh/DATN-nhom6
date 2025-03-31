@@ -1,0 +1,245 @@
+/* General Section Styling */
+section.my-5 {
+    padding: 30px 0; /* Đồng bộ với các trang khác */
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+    max-width: 80%; /* Đồng bộ với header/footer */
+    margin: 0 auto; /* Căn giữa */
+}
+
+section.my-5 .section-title {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+    padding: 12px 20px; /* Tinh tế hơn */
+    border-radius: 10px 10px 0 0; /* Đồng bộ với cart.css */
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 26px; /* Đồng bộ với style.css */
+    font-weight: 600;
+    letter-spacing: 1.5px; /* Hiện đại hơn */
+    text-transform: uppercase;
+}
+
+/* Order Items Container */
+section.my-5 #orderItems {
+    background-color: #ffffff; /* Đổi từ #f0f7fa sang trắng để nổi bật */
+    padding: 20px; /* Tăng từ 15px để thoáng hơn */
+    border-radius: 10px; /* Đồng bộ với style.css */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+}
+
+/* Order Card */
+section.my-5 #orderItems .card {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+section.my-5 #orderItems .card:hover {
+    transform: translateY(-5px); /* Hiệu ứng nâng nhẹ */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+section.my-5 #orderItems .card-body {
+    padding: 15px; /* Nhỏ gọn hơn */
+}
+
+section.my-5 #orderItems .card-title {
+    font-size: 18px; /* Nhỏ hơn để tinh tế */
+    font-weight: 600;
+    color: #333; /* Đồng bộ với style.css */
+    margin-bottom: 10px;
+    letter-spacing: 0.5px; /* Hiện đại hơn */
+}
+
+section.my-5 #orderItems .card-text {
+    font-size: 14px; /* Nhỏ hơn để gọn */
+    color: #666; /* Đồng bộ với style.css */
+    margin-bottom: 8px;
+}
+
+section.my-5 #orderItems .card-text .order-status {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+section.my-5 #orderItems .card-text .order-status.pending {
+    background-color: #ffe082;
+    color: #333;
+}
+
+section.my-5 #orderItems .card-text .order-status.completed {
+    background-color: #81c784;
+    color: white;
+}
+
+section.my-5 #orderItems .card-text .order-status.cancelled {
+    background-color: #ef5350;
+    color: white;
+}
+
+section.my-5 #orderItems .btn {
+    background: #25aceb;
+    border: none;
+    padding: 8px 15px; /* Nhỏ gọn hơn */
+    border-radius: 25px; /* Đồng bộ với style.css */
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease; /* Đồng bộ với style.css */
+}
+
+section.my-5 #orderItems .btn:hover {
+    background: #0288d1;
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header .modal-title {
+    font-size: 20px; /* Nhỏ hơn để tinh tế */
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Hiện đại hơn */
+}
+
+.modal-header .btn-close {
+    filter: invert(1); /* Đổi màu nút đóng thành trắng */
+}
+
+.modal-body .table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đồng bộ với style.css */
+}
+
+.modal-body .table thead {
+    background: linear-gradient(90deg, #25aceb, #0288d1); /* Gradient đồng bộ */
+    color: white;
+}
+
+.modal-body .table thead th {
+    font-weight: 600;
+    text-align: center;
+    padding: 12px; /* Nhỏ gọn hơn */
+    font-size: 14px; /* Đồng bộ với cart.css */
+    letter-spacing: 0.75px; /* Hiện đại hơn */
+}
+
+.modal-body .table tbody tr {
+    transition: background 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+.modal-body .table tbody tr:hover {
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+}
+
+.modal-body .table tbody td {
+    vertical-align: middle;
+    padding: 12px; /* Nhỏ gọn hơn */
+    text-align: center;
+    font-size: 14px; /* Đồng bộ với cart.css */
+    color: #333;
+}
+
+.modal-body .table tbody td img {
+    width: 50px; /* Nhỏ gọn hơn */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Thêm bóng nhẹ */
+}
+
+.modal-footer .btn {
+    background: #25aceb;
+    border: none;
+    padding: 8px 15px; /* Nhỏ gọn hơn */
+    border-radius: 25px; /* Đồng bộ với style.css */
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    background: #0288d1;
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section.my-5 {
+        padding: 20px 0; /* Giảm trên tablet */
+        max-width: 90%; /* Tăng nhẹ để tận dụng không gian */
+    }
+
+    section.my-5 .section-title {
+        font-size: 22px; /* Giảm trên tablet */
+        padding: 10px 15px;
+    }
+
+    section.my-5 #orderItems .card {
+        margin-bottom: 15px; /* Giảm khoảng cách */
+    }
+
+    section.my-5 #orderItems .card-title {
+        font-size: 16px; /* Giảm trên tablet */
+    }
+
+    section.my-5 #orderItems .card-text {
+        font-size: 13px; /* Giảm trên tablet */
+    }
+
+    .modal-body .table thead th,
+    .modal-body .table tbody td {
+        font-size: 12px; /* Giảm trên tablet */
+        padding: 10px;
+    }
+
+    .modal-body .table tbody td img {
+        width: 40px; /* Giảm trên tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    section.my-5 {
+        max-width: 95%; /* Tăng trên mobile */
+    }
+
+    section.my-5 #orderItems {
+        padding: 15px; /* Giảm trên mobile */
+    }
+
+    section.my-5 #orderItems .col-md-4 {
+        width: 100%; /* Chuyển thành full-width trên mobile */
+    }
+
+    section.my-5 #orderItems .card-title {
+        font-size: 14px; /* Giảm trên mobile */
+    }
+
+    section.my-5 #orderItems .card-text {
+        font-size: 12px; /* Giảm trên mobile */
+    }
+
+    .modal-body .table thead th,
+    .modal-body .table tbody td {
+        font-size: 11px; /* Giảm trên mobile */
+        padding: 8px;
+    }
+
+    .modal-body .table tbody td img {
+        width: 30px; /* Giảm trên mobile */
+    }
+}

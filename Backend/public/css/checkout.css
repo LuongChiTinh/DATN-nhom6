@@ -1,0 +1,213 @@
+
+.checkout-section {
+    padding: 30px 0; /* Giảm từ 40px để nhỏ gọn */
+    background-color: #f0f7fa; /* Đồng bộ với style.css */
+    max-width: 80%; /* Đồng bộ với header/footer trong style.css */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.checkout-section .section-title {
+    font-size: 26px; /* Đồng bộ với .section-title trong style.css */
+    font-weight: 600; /* Giảm từ 700 cho nhẹ nhàng */
+    color: #333; /* Đồng bộ với style.css */
+    text-align: center;
+    margin-bottom: 20px; /* Giảm từ 30px */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Tăng để hiện đại hơn */
+    border-bottom: 3px solid #25aceb; /* Đồng bộ với style.css */
+    padding-bottom: 10px;
+}
+
+/* Order Details Styling */
+.checkout-section .order-details {
+    background-color: #ffffff;
+    padding: 15px; /* Giảm từ 20px để gọn hơn */
+    border-radius: 10px; /* Giảm từ 12px, đồng bộ với style.css */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Đồng bộ với style.css */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Đồng bộ hiệu ứng */
+}
+
+.checkout-section .order-details:hover {
+    transform: translateY(-3px); /* Giảm từ -5px để tinh tế hơn */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section .order-details h4 {
+    font-size: 20px; /* Giảm từ 1.5rem (24px) để nhỏ gọn */
+    font-weight: 600;
+    color: #333; /* Đồng bộ với style.css */
+    margin-bottom: 15px; /* Giảm từ 20px */
+    letter-spacing: 0.5px; /* Thêm để hiện đại */
+}
+
+.checkout-section .order-details .table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.checkout-section .order-details .table thead {
+    background-color: #25aceb; /* Đồng bộ màu chủ đạo */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px; /* Giảm từ 0.9rem để nhỏ gọn */
+    letter-spacing: 0.75px; /* Tăng để hiện đại */
+}
+
+.checkout-section .order-details .table th,
+.checkout-section .order-details .table td {
+    padding: 10px; /* Giảm từ 15px để nhỏ gọn */
+    vertical-align: middle;
+    border: none;
+}
+
+.checkout-section .order-details .table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease;
+}
+
+.checkout-section .order-details .table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.checkout-section .order-details .order-summary {
+    margin-top: 15px; /* Giảm từ 20px */
+    font-size: 14px; /* Giảm từ 1rem để nhỏ gọn */
+    color: #666; /* Đồng bộ với style.css */
+}
+
+.checkout-section .order-details .order-summary .d-flex {
+    padding: 8px 0; /* Giảm từ 10px */
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.checkout-section .order-details .order-summary .d-flex span:last-child {
+    color: #25aceb;
+    font-weight: 600; /* Tăng từ 500 để nổi bật */
+}
+
+.checkout-section .order-details .order-summary .order-total {
+    margin-top: 8px; /* Giảm từ 10px */
+    font-size: 16px; /* Giảm từ 1.2rem để nhỏ gọn */
+    color: #333; /* Đồng bộ với style.css */
+    border-bottom: none;
+}
+
+.checkout-section .order-details .order-summary .order-total span:last-child {
+    color: #d32f2f;
+    font-weight: 700; /* Tăng để nổi bật hơn */
+}
+
+/* Checkout Form Styling */
+.checkout-section .checkout-form {
+    background-color: #ffffff;
+    padding: 20px; /* Giảm từ 25px để gọn hơn */
+    border-radius: 10px; /* Đồng bộ với style.css */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-section .checkout-form:hover {
+    transform: translateY(-3px); /* Giảm từ -5px */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section .checkout-form h4 {
+    font-size: 20px; /* Giảm từ 1.5rem */
+    font-weight: 600;
+    color: #333; /* Đồng bộ với style.css */
+    margin-bottom: 15px; /* Giảm từ 25px */
+    letter-spacing: 0.5px; /* Thêm để hiện đại */
+}
+
+.checkout-section .checkout-form .form-label {
+    font-size: 14px; /* Giảm từ 0.95rem */
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 5px; /* Giảm từ 8px */
+}
+
+.checkout-section .checkout-form .form-control,
+.checkout-section .checkout-form .form-select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px; /* Giảm từ 12px */
+    font-size: 14px; /* Giảm từ 1rem */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-section .checkout-form .form-control:focus,
+.checkout-section .checkout-form .form-select:focus {
+    border-color: #25aceb;
+    box-shadow: 0 0 0 2px rgba(37, 172, 235, 0.2); /* Giảm glow để tinh tế */
+    outline: none;
+}
+
+.checkout-section .checkout-form .btn {
+    background-color: #25aceb;
+    border: none;
+    padding: 10px; /* Giảm từ 12px */
+    font-size: 16px; /* Giảm từ 1.1rem */
+    font-weight: 600; /* Tăng từ 500 để nổi bật */
+    border-radius: 25px; /* Đồng bộ với view-more-btn trong style.css */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Đồng bộ với style.css */
+}
+
+.checkout-section .checkout-form .btn:hover {
+    background-color: #0288d1;
+    transform: scale(1.05); /* Đồng bộ với style.css */
+}
+
+.checkout-section .checkout-form .btn:active {
+    transform: scale(1); /* Reset khi nhấn */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .checkout-section {
+        padding: 20px 0; /* Giảm thêm trên tablet */
+        max-width: 90%; /* Tăng nhẹ để tận dụng không gian */
+    }
+
+    .checkout-section .section-title {
+        font-size: 22px; /* Giảm từ 1.75rem */
+    }
+
+    .checkout-section .order-details,
+    .checkout-section .checkout-form {
+        margin-bottom: 15px; /* Giảm từ 20px */
+    }
+
+    .checkout-section .order-details h4,
+    .checkout-section .checkout-form h4 {
+        font-size: 18px; /* Giảm từ 1.25rem */
+    }
+
+    .checkout-section .order-details .table th,
+    .checkout-section .order-details .table td {
+        font-size: 12px; /* Giảm từ 0.85rem */
+        padding: 8px; /* Giảm từ 10px */
+    }
+
+    .checkout-section .checkout-form .btn {
+        font-size: 14px; /* Giảm từ 1rem */
+    }
+}
+
+@media (max-width: 576px) {
+    .checkout-section {
+        max-width: 95%; /* Tăng trên mobile */
+    }
+
+    .checkout-section .order-details .table {
+        font-size: 11px; /* Giảm từ 0.8rem */
+    }
+
+    .checkout-section .order-details .order-summary {
+        font-size: 12px; /* Giảm từ 0.9rem */
+    }
+
+    .checkout-section .order-details .order-summary .order-total {
+        font-size: 14px; /* Giảm từ 1rem */
+    }
+}

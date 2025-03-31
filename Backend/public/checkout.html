@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Start Light</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <section class="container checkout-section my-5">
+        <h3 class="section-title">Thanh toán</h3>
+        <div class="row">
+            <div class="col-md-8 order-details">
+                <h4>Thông tin đơn hàng</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItems"></tbody>
+                </table>
+                <div class="order-summary">
+                    <div class="d-flex justify-content-between">
+                        <span>Tổng tiền:</span>
+                        <span id="subtotal">0 VNĐ</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Phí vận chuyển:</span>
+                        <span>20,000 VNĐ</span>
+                    </div>
+                    <div class="d-flex justify-content-between order-total">
+                        <strong>Tổng thanh toán:</strong>
+                        <strong id="total">0 VNĐ</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 checkout-form">
+                <h4>Thông tin thanh toán</h4>
+                <form id="checkoutForm">
+                    <div class="mb-3">
+                        <label for="recipientName" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="recipientName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipientPhone" class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" id="recipientPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipientAddress" class="form-label">Địa chỉ giao hàng</label>
+                        <textarea class="form-control" id="recipientAddress" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phương thức thanh toán</label>
+                        <select class="form-select" id="paymentMethod" required>
+                            <option value="Credit Card">Thẻ tín dụng</option>
+                            <option value="PayPal">PayPal</option>
+                            <option value="Bank Transfer">Chuyển khoản ngân hàng</option>
+                            <option value="Cash">Tiền mặt</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Xác nhận thanh toán</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-logo">
+                    <img src="./img/logo.png" alt="Starlight Logo" width="100px">
+                    <p>Kết nối cùng vô vàn mạng xã hội</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-support">
+                    <h3>DỊCH VỤ HỖ TRỢ</h3>
+                    <ul class="list-unstyled">
+                        <li>Hỗ trợ khách hàng</li>
+                        <li>Hỗ trợ mua hàng</li>
+                        <li>Hỗ trợ thanh toán</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-services">
+                    <h3>THÔNG TIN KHÁC</h3>
+                    <ul class="list-unstyled">
+                        <li>Ưu đãi tháng</li>
+                        <li>Chính sách bảo hành</li>
+                        <li>Dịch vụ hỗ trợ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-contact">
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i> +012345678910</li>
+                        <li><i class="fas fa-envelope"></i> cuongntps35144@ftu.edu.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-2">
+                <p>Nhóm 6: DATN © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/checkout.js"></script>
+    <script src="./js/header.js"></script>
+</body>
+</html>

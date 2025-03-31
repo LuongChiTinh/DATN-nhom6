@@ -4,108 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Light</title>
-    
+    <link rel="icon" type="image/png" href="./img/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  
-    <header class="header d-flex justify-content-between align-items-center py-3">
-        <div class="logo">
-            <img src="./img/logo.png" alt="Logo" width="90px">
-        </div>
-        <nav class="nav ms-4">
-            <div class="btn-group"><a href="#">Trang chủ</a></div>
-            <div class="btn-group"><a href="#">Giới thiệu</a></div>
-            <div class="btn-group">
-                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Sách mới</a></li>
-                    <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
-                    <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
-                </ul>
-            </div>
-            <div class="btn-group"><a href="#">Tin tức</a></div>
-        </nav>
-        <div class="icons">
-            <div class="btn-group">
-                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-user"></i>
-                </a>
-                <div class="dropdown-menu p-3">
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn">Đăng nhập</a>
-                        <a href="#" class="btn">Đăng ký</a>
-                    </div>
+    <div id="header-placeholder"></div>
+
+    <div class="main-container">
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner5.webp" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner6.webp" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner4.webp" class="d-block w-100" alt="Banner 3">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
-        
-    </header>
-    <div class="banner">
-        <img src="./img/banner1.webp" alt="Banner" class="img-fluid">
+
+     
+        <div class="voucher-section mt-4">
+            <div class="voucher-wrapper">
+                <div class="voucher-card"><img src="./img/voucher1.jpg" alt="Voucher 1"></div>
+                <div class="voucher-card"><img src="./img/voucher2.jpg" alt="Voucher 2"></div>
+                <div class="voucher-card"><img src="./img/voucher3.jpg" alt="Voucher 3"></div>
+                <div class="voucher-card"><img src="./img/voucher4.jpg" alt="Voucher 4"></div>
+            </div>
+        </div>
+
+        <h3 class="section-title mt-5">Danh mục sản phẩm</h3>
+        <div class="category-wrapper" id="categoryContainer"></div>
+
+        <div class="product-section">
+            <h3 class="section-title mt-5 highlight-title">Sản phẩm mới nhất</h3>
+            <div class="product-wrapper standout-section" id="newProductContainer"></div>
+            <div class="text-center mt-3">
+                <a href="./product.html" class="btn view-more-btn">Xem tất cả</a>
+            </div>
+        </div>
+
+        <div class="product-section">
+            <h3 class="section-title mt-5 highlight-title">Sản phẩm xem nhiều</h3>
+            <div class="product-wrapper standout-section" id="hotProductContainer"></div>
+            <div class="text-center mt-3">
+                <a href="./product.html" class="btn view-more-btn">Xem tất cả</a>
+            </div>
+        </div>
+
+        <h3 class="section-title mt-5">Sản phẩm gợi ý</h3>
+        <div class="product-wrapper suggestion-section" id="suggestedProductContainer"></div>
     </div>
 
-    <div class="container">
-        <section class="text-center my-5 card-section">
-            <h4 class="bg-warning text-white py-2 d-inline-block px-4 rounded">SẢN PHẨM MỚI</h4>
-            <div class="bars">
-                <div class="btn-group">
-                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-bars"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Sách mới</a></li>
-                        <li><a class="dropdown-item" href="#">Sách bán chạy</a></li>
-                        <li><a class="dropdown-item" href="#">Sách khuyến mãi</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-down"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-wrapper">
-                
-            </div>
-        </section>
-        <img src="./img/banner2.webp" alt=""width="100%">
-    
-        <img src="./img/banner3.webp" alt=""width="100%">
-        <div class="out-voucher">
-            <div class="text-center">
-                <h3 class="bg-warning text-black py-2 d-inline-block px-4 rounded" >ƯU ĐÃI THANH TOÁN</h3>
-    
-            </div>
-            <div class="voucher ">
-                <div class="vc1">
-                    <img src="./img/vcher1'.jpg" alt="">
-                </div>
-                <div class="vc1">
-                    <img src="./img/vcher8.jpg" alt="">
-                </div>
-                <div class="vc1">
-                    <img src="./img/vcher2.jpg" alt="">
-                </div>
-            </div>
-            <div class="email-contact">
-    <h2>LIÊN HỆ TỚI QUA EMAIL</h2>
-    <form>
-        <input type="email" placeholder="Enter your Email..." required>
-        <button type="submit">Gửi Email</button>
-    </form>
-</div>
-        </div>
-       
-    
-    </div>
-  
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 footer-logo">
                     <img src="./img/logo.png" alt="Starlight Logo" width="100px">
                     <p>Kết nối cùng vô vàn mạng xã hội</p>
-                    <p>Watch, Thương hiệu nổi bật nhất hiện nay.</p>
                     <div class="social-icons">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -119,35 +89,33 @@
                         <li>Hỗ trợ khách hàng</li>
                         <li>Hỗ trợ mua hàng</li>
                         <li>Hỗ trợ thanh toán</li>
-                        <li>Hỗ trợ chăm sóc khách hàng</li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-services">
-                    <h3>DỊCH VỤ THÔNG TIN KHÁC</h3>
+                    <h3>THÔNG TIN KHÁC</h3>
                     <ul class="list-unstyled">
-                        <li>Ưu đãi tháng tận</li>
-                        <li>Quy chế bảo quyền</li>
+                        <li>Ưu đãi tháng</li>
                         <li>Chính sách bảo hành</li>
-                        <li>Dịch vụ bảo hành</li>
+                        <li>Dịch vụ hỗ trợ</li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-contact">
-                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <h3>LIÊN HỆ</h3>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> Ấp 3, Xuyên Thọ Thượng, Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</li>
                         <li><i class="fas fa-phone"></i> +012345678910</li>
                         <li><i class="fas fa-envelope"></i> cuongntps35144@ftu.edu.vn</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom text-center py-2">
-                <p>Nhóm 6: DATN</p>
+                <p>Nhóm 6: DATN © 2025</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
-
-
